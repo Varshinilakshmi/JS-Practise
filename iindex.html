@@ -9,46 +9,56 @@
     
 </body>
 <script>
-// var a =[1,[2,4,5],[3[4,6,7]],4];
-// console.log(a.flat());
+var a =[1,[2,4,5],[3[4,6,7]],4];
+console.log(a.flat());
  
-// var b=[1,2,3,4,5,6,7,8,9];
-// for(i=0;i<b.length;i++){
-//     if(b[i]>=4 ){
-//         console.log(a[i]);
-//     } 
-// }
+var b=[1,2,3,4,5,6,7,8,9];
+for(i=0;i<b.length;i++){
+    if(b[i]>=4 ){
+        console.log(a[i]);
+    } 
+}
 
-// var a=["hello", "kumar", "raju"];
-// var b;
-// var c;
-// for(i=0;i<a.length;i++){
-
-// }
-
-// sum of even numbers
-//  num= +prompt("Enter a number:");
-//  sum=0;
-//  str=String(num)
-//  for(i of str){
-//     if(i%2<1){
-//     sum=sum+Number(i);
-//     }
-
-//  }
-// console.log(sum);
+var a=["hello", "kumar", "raju"];
+var c=[];
+var d=[];
+for(i=0;i<a.length;i++){
+   for(j=0;j<a[i].length;j++){
+    if(a[i][j]=="a" || a[i][j]=="e" || a[i][j]=="i" || a[i][j]=="o" || a[i][j]=="u"){
+        c.push(a[i][j])
+   } 
+   else {
+    d.push(a[i][j])
+   }
+}
+}
+console.log(c);
+console.log(d);
 
 
-// print even num in single line
-// num= +prompt("enter no:");
-// str=String(num)
-// s=""
-// for(i=1;i<=num;i++){
-//     if(i%2==0)
-//    s=s+i+ " ";
+sum of even numbers
+ num= +prompt("Enter a number:");
+ sum=0;
+ str=String(num)
+ for(i of str){
+    if(i%2<1){
+    sum=sum+Number(i);
+    }
+
+ }
+console.log(sum);
+
+
+print even num in single line
+num= +prompt("enter no:");
+str=String(num)
+s=""
+for(i=1;i<=num;i++){
+    if(i%2==0)
+   s=s+i+ " ";
     
-//   }
-//   console.log(s);
+  }
+  console.log(s);
 
 //Fibanocci series
 num =+prompt("Enter no. of series");
@@ -66,6 +76,8 @@ if(num==0){
         i++
     }
 }
+
+//
 
 
 
